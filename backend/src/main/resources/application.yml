@@ -1,0 +1,19 @@
+spring:
+  mongodb:
+    embedded:
+      version: 4.0.28
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  data:
+    mongodb:
+#      uri: mongodb://self-service-portal-admin:LzVMRm5wa3E3cmxyKy85b0F1ZXZ0WkRPTUxkNXZMSmw=@localhost:27017/self-service-portal
+      host: localhost
+      port: 27017
+      database: self-service-portal
+      username: self-service-portal-admin
+      password: f336fd53cc120c9c4251f9c9
+      repositories:
+        type: reactive
+server:
+  servlet:
+    context-path: /api
