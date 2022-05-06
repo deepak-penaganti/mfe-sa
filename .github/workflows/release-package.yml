@@ -29,6 +29,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: cd frontend && npm ci
       - run: echo "${{secrets}}"
+      - run: echo "${{secrets}} --"
       - run: echo "${{secrets.GITHUB_TOKEN}}"
       - run: cd frontend && npm publish
         env:
