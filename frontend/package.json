@@ -1,5 +1,5 @@
 {
-  "name": "@deepak-penaganti/sa-frontend",
+  "name": "sa-frontend",
   "version": "0.1.0",
   "publishConfig": {
       "@deepak-penaganti:registry": "https://npm.pkg.github.com"
